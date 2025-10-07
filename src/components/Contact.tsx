@@ -5,7 +5,7 @@ export default function Contact() {
     document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
   };
   return (
-    <section id="contact" className="reveal py-2 px-4 bg-gray-900 text-white">
+    <section id="contact" className="reveal py-24 px-4 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-light mb-4 tracking-wide">
@@ -59,7 +59,38 @@ export default function Contact() {
               </div>
             </div>
 
-           
+            <div className="mt-12">
+              <h4 className="text-xl font-light mb-6 tracking-wide">Follow Us</h4>
+              <div className="flex space-x-4">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-gray-800 hover:bg-amber-600 rounded-full transition-colors duration-300"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-gray-800 hover:bg-amber-600 rounded-full transition-colors duration-300"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-gray-800 hover:bg-amber-600 rounded-full transition-colors duration-300"
+                  aria-label="Twitter"
+                >
+                  <Twitter className="w-6 h-6" />
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="h-[500px] bg-gray-800 rounded-sm overflow-hidden">
@@ -75,7 +106,15 @@ export default function Contact() {
             ></iframe>
           </div>
 
-         
+          <div className="mt-4 flex justify-start">
+            <button
+              onClick={scrollToHero}
+              aria-label="Back to top"
+              className="inline-flex items-center justify-center w-10 h-10 bg-amber-600 hover:bg-amber-500 text-white rounded-full shadow-lg transition-colors duration-300"
+            >
+              <CornerLeftUp className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         
